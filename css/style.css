@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*******************
+** fonts
+*******************/
+
+@font-face {
+	font-family: "Galada";
+	src: url("../fonts/Galada-Regular/Galada-Regular.eot");
+	src: url("../fonts/Galada-Regular/Galada-Regular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/Galada-Regular/Galada-Regular.woff") format("woff"),
+			 url("../fonts/Galada-Regular/Galada-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto-Regular/Roboto-Regular.eot");
+	src: url("../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"),
+			 url("../fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font-family: 'Roboto';
+	color:#444;
+}
+
+svg {
+	width: 100%;
+}
+
+.content {
+	max-width: 900px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+textarea{
+	resize: none;
+}
+
+/*******************
+** hrader
+*******************/
+
+.head {
+	height: 10%;
+	background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 100%, #eeeeee 100%, #eeeeee 101%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 100%,#eeeeee 100%,#eeeeee 101%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 100%,#eeeeee 100%,#eeeeee 101%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+    overflow: hidden;
+    padding: 1% 0;
+}
+/*logo*/
+.head-logo {
+	width: 20%;
+	height: 6.1%;
+	float: left;
+	margin-right: 28.2%
+}
+
+.head-logo img, .footer-logo img {
+	width: 100%;
+}
+
+
+/*******************
+** contact
+*******************/
+
+.head-contact {
+	float: left;
+	width: 24.6%;
+	height: 7.2%;
+}
+/*phone*/
+.head-contact_phone {
+	display: block;
+	font-size: 1.55em;
+	color:#444;
+	text-align: right;
+
+
+}
+/*email*/
+.head-contact_email {
+	display: block;
+	font-size: 0.8em;
+	color: #01b3f2;
+	text-align: right;
+	margin-top: 2.2%;
+
+}
+/*adress*/
+.head-contact_adress{
+	font-size: 0.680em;
+	margin-top: 2.2%;
+	text-align: right;
+
+}
+/*******************
+**  time work
+*******************/
+.head-time{
+	float: left;
+	margin-right: 8.8%;
+	width: 18.3%;
+	height: 8%;
+}
+/*button call back*/
+.head-time_button_call {
+	cursor: pointer;
+}
+/*icon phone*/
+.head-time_icon_call{
+	float: left;
+	width: 10.9%;
+}
+
+.head-time_icon_call svg {
+	fill: #01b3f2;
+	margin:0.6% 3% 0;
+}
+/*text in button call back*/
+.head-time_text_call {
+	float: right;
+	color: #01b3f2;
+	text-decoration: underline;
+	font-size: 0.875em;
+	text-transform: uppercase;
+
+}
+/*text*/
+.head-time_time_work{
+	text-align: right;
+	
+}
+
+/*******************
+** navigation
+*******************/
+.toggle {
+	color: #fff;
+	display: none;
+	cursor: pointer;
+}
+
+.menu {
+	height: 5.5%;
+	background: #444;
+
+}
+/*text*/
+.navigation{
+	overflow: hidden;
+	position: relative;
+}
+.navigation-wrap {
+	width: 83%;
+    margin: 0 auto;
+    padding:0;
+}
+.nav {
+    width: 83%;
+    margin: 0 auto;
+
+}
+
+.nav_item {
+	float: left;
+	line-height: 3.125em;
+}
+
+.link {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0 1.25em 0;
+	display: block;
+	height: 100%;
+	transition: all .3s;
+}
+
+.link:hover {
+	background: #01b3f2;
+	transition: all .3s;
+}
+
+.search {
+	width: 1.6%;
+	fill: #fff;
+	position: absolute;
+	margin:2% 0;
+	right: 0;
+	top:0;
+	cursor: pointer;
+}
+
+/*******************
+** slider
+*******************/
+
+
+
+.sleder-item {
+	width: 100%;
+	height:500px;
+	background: url('../img/test-slide.jpg')no-repeat center/ cover;
+	z-index: 1;
+	position: relative;
+	color: white;
+	background-attachment: fixed;
+	overflow: hidden;
+	line-height: 3.12em;
+}
+
+.sleder-item:before {
+	position: absolute;
+	content: '';
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	z-index: -1;
+
+}
+
+.slider-intro_text {
+	width: 100%;
+	text-align: center;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	margin-top: 11.1%;
+	text-shadow: 3px 3px 5px #000;
+}
+
+.slider-intro_button {
+	margin-top: 2.77%;
+}
+
+.slider-intro_btn {
+	display: block;
+	margin: 0 auto ;
+	background: transparent;
+	color:#fff;
+	border:2px solid #01b3f2;
+	text-transform: uppercase;
+	padding: 1.066em 4.06em;
+	cursor: pointer;
+	transition: all .3s;
+
+}
+
+.slider-intro_btn:hover {
+	background-color: rgba(1,179,242,0.5);
+}
+
+/*******************
+** about
+*******************/
+
+.about-inner p {
+	margin: 1.11% 0;
+	line-height: 1.500em;
+}
+
+.section-title {
+	font-size: 1.875em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 5.76% 0;
+}
+
+/*******************
+** production
+*******************/
+
+.production-point, .service-point {
+	float: left;
+	width: 33.333333333%;
+}
+.production-point_img {
+	width: 90%;
+	margin: 0 auto;
+
+}
+.production-point_img img {width: 100%;}
+
+.production-point_text {
+	line-height: 1.500em;
+	margin-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.service .service-point {
+	margin-top: 5.01%;
+}
+
+.service-point_img svg {
+	width: 20.06%;
+	display: block;
+	margin:0 auto;
+	fill: #01b3f2;
+}
+
+.service-point_text {
+	margin-top: 1.6%;
+	text-align: center;
+	font-size: 0.875em;
+	line-height: 1.500em;
+}
+
+/*******************
+** footer
+*******************/
+
+
+footer {
+	background: #444;
+	height: 160px;
+	overflow: hidden;
+	margin-top: 5.55%;
+	padding: 1% 0;
+	color: #fff;
+}
+
+/* left footer*/
+
+.left-footer {
+	float: left;
+	width: 30%;
+}
+
+.left-footer a img {
+	width: 90%;
+}
+
+.copyrignt {
+	font-size: 0.85em;
+	margin: 1.5% 0 0 10%;
+}
+
+/*right footer*/
+
+.right-footer {
+	float: right;
+	width: 70%;
+}
+/*nav footer*/
+.footer-navigation ul {
+	list-style: none;
+	float: right;
+	margin:4.22% 0;
+}
+
+.footer-navigation ul li {
+	float: left;
+}
+
+.footer-navigation ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	padding: 0 0.875em;
+	height: 100%;
+}
+
+.footer-navigation ul li a:hover  {
+	color: #01b3f2
+}
+
+/*adderss footer*/
+.footer-address {
+	float: left;
+	width: 50%;
+	margin-left: 9.11%;
+}
+
+/*footer contact*/
+
+.footer-contact {
+	float: right;
+	width: 39%;
+}
+
+.footer-address_text {
+	font-size: 0.875em;
+}
+
+.footer-contact_text {
+	font-size: 1.5em;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.footer-address_btn {
+	width: 88%;
+    padding: 3% 0;
+    text-transform: uppercase;
+    background: #01b3f2;
+    border: none;
+    margin-top: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-contact_email {
+	display: block;
+	font-size: 1.1em;
+	color: #01b3f2;
+	margin-top: 6.2%;
+}
+
+.footer-contact_phone {
+	display: block;
+	color: #fff;
+}
